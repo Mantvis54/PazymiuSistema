@@ -17,20 +17,21 @@ int main()
 
     while (true)
     {
-        cout << "\n====================================\n";
+        cout << "\n************************************\n";
         cout << "      MOKINIU PAZYMIU SISTEMA       \n";
-        cout << "====================================\n";
+        cout << "\n************************************\n";
         cout << "1. Ivesti mokinio varda ir pazymius\n";
         cout << "2. Perziureti pazymius\n";
         cout << "3. Atnaujinti konkretu pazymi\n";
         cout << "4. Pasalinti mokini is saraso\n";
         cout << "5. Iseiti\n";
-        cout << "====================================\n";
+        cout << "\n************************************\n";
         cout << "Pasirinkite veiksma: ";
         cin >> choice;
 
         if (choice == 1)
         {
+            // DUOMENŲ ĮVEDIMAS
             if (studentCount >= MAX_STUDENTS)
             {
                 cout << "Klaida: Pasiektas maksimalus mokiniu skaicius (100).\n";
@@ -65,6 +66,7 @@ int main()
         }
         else if (choice == 2)
         {
+            // DUOMENŲ ATVAIZDAVIMAS
             if (studentCount == 0)
             {
                 cout << "Mokiniu sarasas tuscias.\n";
@@ -119,6 +121,7 @@ int main()
         }
         else if (choice == 3)
         {
+            // PAŽYMIO ATNAUJINIMAS
             if (studentCount == 0)
             {
                 cout << "Mokiniu sarasas tuscias.\n";
@@ -169,6 +172,7 @@ int main()
         }
         else if (choice == 4)
         {
+            // MOKINIO PAŠALINIMAS
             if (studentCount == 0)
             {
                 cout << "Mokiniu sarasas tuscias.\n";
